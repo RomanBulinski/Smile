@@ -54,7 +54,11 @@ public class MainTest {
 
     @Test
     public void test6() {
-        List<String> a =  Arrays.asList("p-p)", ";p)", ":xX", "5op", ";~d", ";oD", "5-D", "4)", "pD", ";)", ":Pp", ";-x", ";D", ":D", ";)", "()", "()", ":8X", ";)D", "pd~D", "8pD", "p)", ";X", "8-)", "5~D", "8-D", "5x2x", "5d)", "8-2)", "p:~D", ":2P");
+        List<String> a =  Arrays.asList("p-p)", ";p)", ":xX", "5op",
+                ";~d", ";oD", "5-D", "4)", "pD", ";)", ":Pp", ";-x",
+                ";D", ":D", ";)", "()", "()", ":8X", ";)D", "pd~D",
+                "8pD", "p)", ";X", "8-)", "5~D", "8-D", "5x2x", "5d)",
+                "8-2)", "p:~D", ":2P");
         assertEquals(4, Main.countSmileys(a));
     }
 
@@ -64,7 +68,15 @@ public class MainTest {
 //
     @Test
     public void test7() {
-        List<String> a =  Arrays.asList(":X", "oD'", "'-P", "o;D", "4~D", ":2pDD", "'~d", "4xp", ";X", "oD", ":oD", ";-D", ":x", ":d", "(xx", "85P", ";~)", "4~P", "o~D", ":D", ";8)", ":o)", ";~P", "o()", ";)", ":D", "oP", ";~)", ":D", "~;)", ":p)", "5D)", "4p", "8ox)", "-:)", "(-P", ";p)", ";D", "o-Px", ";P");
+        List<String> a =  Arrays.asList(":X", "oD'", "'-P", "o;D", "4~D", ":2pDD", "'~d", "4xp", ";X", "oD", ":oD",
+                ";-D", ":x", ":d", "(xx", "85P",
+                ";~)", "4~P", "o~D",
+                ":D", ";8)", ":o)", ";~P", "o()",
+                ";)",
+                ":D", "oP",
+                ";~)",
+                ":D", "~;)", ":p)", "5D)", "4p", "8ox)", "-:)", "(-P", ";p)",
+                ";D", "o-Px", ";P");
         assertEquals(8, Main.countSmileys(a));
     }
 
